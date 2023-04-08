@@ -2,6 +2,9 @@ FROM ubuntu
 
 RUN apt-get update
 RUN apt-get install python3-pip -y
+RUN pip install --upgrade pip
+RUN pip install --root-user-action=ignore requests
+
 Run pip3 install Flask
 
 WORKDIR /app
