@@ -1,7 +1,7 @@
 FROM ubuntu
 
-RUN apt update
-RUN apt install python3-pip -y
+RUN apt-get update
+RUN apt-get install python3-pip -y
 Run pip3 install Flask
 
 WORKDIR /app
